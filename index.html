@@ -80,7 +80,26 @@
               <input type="text" id="cccd" placeholder="12 chữ số" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-white/70">
             </div>
           </div>
-
+<!-- KHUNG BỔ SUNG BHYT -->
+<div class="p-3.5 bg-emerald-50/70 border border-emerald-100 rounded-2xl space-y-3">
+  <span class="text-xs font-bold text-emerald-800 uppercase tracking-wide flex items-center gap-1">
+    <span>💳</span> Thông tin Bảo hiểm Y tế (BHYT)
+  </span>
+  <div>
+    <label class="block text-xs font-medium text-slate-600 mb-1">Số thẻ BHYT (hoặc Mã số BHXH)</label>
+    <input type="text" id="soBHYT" placeholder="VD: 10 chữ số trên thẻ hoặc ứng dụng VssID" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-400">
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+    <div>
+      <label class="block text-xs font-medium text-slate-600 mb-1">Nơi đăng ký KCBBĐ</label>
+      <input type="text" id="noiKCB" placeholder="VD: TTYT Huyện U Minh, BVĐK Cà Mau..." class="w-full px-3.5 py-2 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-400">
+    </div>
+    <div>
+      <label class="block text-xs font-medium text-slate-600 mb-1">Thời hạn thẻ (Hạn sử dụng)</label>
+      <input type="text" id="hanBHYT" placeholder="VD: 31/12/2026 hoặc Đến đủ 18 tuổi" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-400">
+    </div>
+  </div>
+</div>
           <div>
             <label class="block text-sm font-semibold mb-1">Địa chỉ thường trú (Ấp/Khóm, Xã, Tỉnh) <span class="text-rose-500">*</span></label>
             <input type="text" id="diaChi" placeholder="VD: Ấp 17, xã Khánh Lâm, Cà Mau" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-white/70">
@@ -303,6 +322,9 @@
         danToc: document.getElementById('danToc').value.trim(),
         tonGiao: document.getElementById('tonGiao').value.trim(),
         cccd: document.getElementById('cccd').value.trim(),
+        soBHYT: document.getElementById('soBHYT').value.trim(),
+        noiKCB: document.getElementById('noiKCB').value.trim(),
+        thoihanBHYT: document.getElementById('hanBHYT').value.trim(),
         diaChi: document.getElementById('diaChi').value.trim(),
         choO: document.getElementById('choO').value.trim(),
         sdtHS: document.getElementById('sdtHS').value.trim(),
